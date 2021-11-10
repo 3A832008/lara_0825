@@ -20,6 +20,8 @@ Route::get('/', function () {
     //$post->content = 'test content';
     //$post->save();
 });
+$post=\App\Models\Post::all();
+dd($post);
 
 Post::create([
         'title'=>'test title2',
